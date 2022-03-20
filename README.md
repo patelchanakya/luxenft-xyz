@@ -1,7 +1,9 @@
-# Maze Solidity > Smart Contracts
-# Boiler mint website w smart contract sys built-in
+Maze Solidity > Smart Contracts
+Boiler mint website w smart contract sys built-in
 # LUXEnft
 
+# Start up
+# npm start
 
 # Basic Sample Hardhat Project
 
