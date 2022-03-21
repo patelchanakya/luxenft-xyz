@@ -3,6 +3,7 @@ import BackgroundClip from "./video/mainbackground.mp4";
 import AudioClip from "./video/cossy.mp3";
 import { Howl } from "react-howler";
 import { useEffect, useState } from "react";
+import { FixedNumber } from "ethers";
 
 function App() {
   // const audioTune = new Audio("./video/mainbackground.mp3");
@@ -145,6 +146,15 @@ function App() {
         >
           NFT EXPERIENCE
         </h4>
+        <h1
+          style={{
+            zIndex: 11,
+            marginTop: "847px",
+            fontSize: "1rem",
+          }}
+        >
+          @chanakyeah
+        </h1>
       </div>
     </div>
   );
