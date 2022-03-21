@@ -1,38 +1,11 @@
 import "./App.css";
 import BackgroundClip from "./video/mainbackground.mp4";
 import AudioClip from "./video/cossy.mp3";
-import { Howl } from "react-howler";
-import { useEffect, useState } from "react";
-import { FixedNumber } from "ethers";
 
 function App() {
-  // const audioTune = new Audio("./video/mainbackground.mp3");
-  // const [playInLoop, setPlayInLoop] = useState(false);
-  // useEffect(() => {
-  //   audioTune.load();
-  // }, []);
-  // useEffect(() => {
-  //   audioTune.loop = playInLoop;
-  // }, [playInLoop]);
-  // const playSound = () => {
-  //   audioTune.play();
-  // };
-
-  // // pause audio sound
-  // const pauseSound = () => {
-  //   audioTune.pause();
-  // };
-
-  // // stop audio sound
-  // const stopSound = () => {
-  //   audioTune.pause();
-  //   audioTune.currentTime = 0;
-  // };
-  let audio = new Audio(AudioClip);
+  let audio = new Audio("./video/cossy.mp3");
   const start = () => {
-    var x = document.getElementById("darkmane");
     audio.play();
-    audio.loop(true);
     // if (x.style.display === "none") {
     //   x.style.display = "block";
     // } else {
@@ -53,6 +26,7 @@ function App() {
     document.getElementById("oldh1").style.display = "none";
     document.getElementById("newh1").style.display = "block";
     document.getElementById("newh4").style.display = "block";
+    document.getElementById("newenter").style.display = "block";
     audio.play();
   }
 
@@ -150,7 +124,9 @@ function App() {
           style={{
             zIndex: 11,
             marginTop: "847px",
+            marginLeft: "500px",
             fontSize: "1rem",
+            position: "fixed",
           }}
         >
           @chanakyeah
