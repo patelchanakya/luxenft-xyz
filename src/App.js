@@ -152,7 +152,6 @@ function App() {
         <span
           id="newspan"
           style={{
-            fontSize: "16px",
             fontFamily: "times",
             fontSize: "medium",
             position: "fixed",
