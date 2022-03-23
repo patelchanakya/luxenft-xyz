@@ -1,6 +1,4 @@
-
-https://user-images.githubusercontent.com/57300803/159612477-5a4af01c-6d32-49c6-9e7f-740248479629.mp4
-
+https://623a92e4a522d5000860f751--wondrous-parfait-76c874.netlify.app/
 
 Maze Solidity > Smart Contracts
 Boiler mint website w smart contract sys built-in
