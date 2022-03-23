@@ -1,4 +1,4 @@
-https://623a92e4a522d5000860f751--wondrous-parfait-76c874.netlify.app/
+enterquietly.netlify.app
 
 Maze Solidity > Smart Contracts
 Boiler mint website w smart contract sys built-in
