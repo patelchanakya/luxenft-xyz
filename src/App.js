@@ -3,14 +3,9 @@ import BackgroundClip from "./video/mainbackground.mp4";
 import AudioClip from "./video/cossy.mp3";
 
 function App() {
-  let audio = new Audio("./video/cossy.mp3");
+  let audio = new Audio(AudioClip);
   const start = () => {
     audio.play();
-    // if (x.style.display === "none") {
-    //   x.style.display = "block";
-    // } else {
-    //   x.style.display = "none";
-    // }
   };
 
   function on() {
@@ -18,16 +13,18 @@ function App() {
     document.getElementById("stayh1").style.color = "white";
     document.getElementById("stayh1").style.opacity = 1;
     document.getElementById("oldh1").style.opacity = 0.1;
+    document.getElementById("newspan").style.color = "white";
   }
 
   function off() {
+    audio.play();
     document.getElementById("overlay").style.display = "none";
     document.getElementById("stayh1").style.display = "none";
     document.getElementById("oldh1").style.display = "none";
     document.getElementById("newh1").style.display = "block";
     document.getElementById("newh4").style.display = "block";
-    document.getElementById("newenter").style.display = "block";
-    audio.play();
+    document.getElementById("newspan").style.textDecoration = "none";
+    document.getElementById("newh11").style.display = "block";
   }
 
   return (
@@ -120,7 +117,7 @@ function App() {
         >
           NFT EXPERIENCE
         </h4>
-        <h1
+        {/* <h1
           style={{
             zIndex: 11,
             marginTop: "847px",
@@ -130,7 +127,46 @@ function App() {
           }}
         >
           @chanakyeah
+        </h1> */}
+        <h1
+          id="newh11"
+          style={{
+            display: "none",
+            position: "fixed",
+            zIndex: 11,
+            marginTop: "847px",
+            marginLeft: "500px",
+            fontFamily: "times",
+            fontSize: "medium",
+            opacity: 0.3,
+            width: "100%",
+            color: "red",
+            textDecoration: "underline",
+            textDecorationColor: "white",
+            textDecorationThickness: "40%",
+            textDecorationStyle: "double",
+          }}
+        >
+          c o m i n g s o o n
         </h1>
+        <span
+          id="newspan"
+          style={{
+            fontSize: "16px",
+            fontFamily: "times",
+            fontSize: "medium",
+            position: "fixed",
+            width: "100%",
+            zIndex: 11,
+            marginTop: "864px",
+            marginLeft: "644px",
+            textDecoration: "line-through",
+            textDecorationColor: "red",
+            textDecorationThickness: "40%",
+          }}
+        >
+          @chanakyeah
+        </span>
       </div>
     </div>
   );
