@@ -1,4 +1,4 @@
-enterquietly.netlify.app
+https://enterquietly.netlify.app
 
 Maze Solidity > Smart Contracts
 Boiler mint website w smart contract sys built-in
