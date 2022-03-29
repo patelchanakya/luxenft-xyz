@@ -1,6 +1,7 @@
 import "./App.css";
 import BackgroundClip from "./video/mainbackground.mp4";
 import AudioClip from "./video/cossy.mp3";
+import pdf from "./filers/chankyapatel_resume.pdf";
 
 function App() {
   let audio = new Audio(AudioClip);
@@ -14,6 +15,12 @@ function App() {
     document.getElementById("stayh1").style.opacity = 1;
     document.getElementById("oldh1").style.opacity = 0.1;
     document.getElementById("newspan").style.color = "white";
+    document.getElementById("mirrorxyztoo").style.display = "none";
+    document.getElementById("mirrorxyztoor").style.display = "none";
+
+    document.getElementById("myres").style.display = "none";
+    document.getElementById("myres").classList.add("fade-in-text");
+    document.getElementById("mirrorxyztoor").classList.add("fade-in-text");
   }
 
   function off() {
@@ -23,30 +30,31 @@ function App() {
     document.getElementById("oldh1").style.display = "none";
     document.getElementById("newh1").style.display = "block";
     document.getElementById("newh4").style.display = "block";
-    //  document.getElementById("mirrorxyz").style.display = "block";
+    document.getElementById("mirrorxyztoor").style.display = "block";
     document.getElementById("newspan").style.textDecoration = "none";
     document.getElementById("newh11").style.display = "block";
     document.getElementById("mirrorxyz").style.display = "block";
+    document.getElementById("mirrorxyztoo").style.display = "block";
+
+    document.getElementById("myres").style.display = "block";
   }
 
   return (
     <div className="App">
       <div className="container">
         {/* <div id="darkmane" className="darkbox" onClick={start} /> */}
-
         <h1
           id="oldh1"
           style={{
             zIndex: 1,
             borderStyle: "dashed",
             borderWidth: "5px",
-            borderColor: "red",
+            borderColor: "crimson",
           }}
           onClick={on}
         >
           ENTER QUIETLY
         </h1>
-
         <h3
           id="newh1"
           style={{
@@ -119,6 +127,7 @@ function App() {
         >
           NFT EXPERIENCE
         </h4>
+        {/* <div></div> */}
         <h4
           class="fade-in-text"
           id="mirrorxyz"
@@ -126,12 +135,57 @@ function App() {
             zIndex: 10,
             position: "fixed",
             display: "none",
-            color: "antiquewhite",
+            color: "wheat",
             marginTop: "120px",
+            fontSize: "small",
+            fontWeight: "lighter",
           }}
         >
-          stay tuned ~ https://mirror.xyz/chanak.eth
+          stay tuned
         </h4>
+
+        <a
+          class="fade-in-text"
+          id="mirrorxyztoo"
+          href={"https://mirror.xyz/chanak.eth"}
+          style={{
+            zIndex: 10,
+            position: "fixed",
+            display: "none",
+            color: "wheat",
+            marginTop: "130px",
+          }}
+        >
+          https://mirror.xyz/chanak.eth
+        </a>
+        <h4
+          id="mirrorxyztoor"
+          style={{
+            zIndex: 10,
+            position: "fixed",
+            display: "block",
+            color: "wheat",
+            marginTop: "360px",
+            fontSize: "small",
+            fontWeight: "lighter",
+          }}
+        >
+          about me
+        </h4>
+        <a
+          href={pdf}
+          id="myres"
+          download="chanakya_resume"
+          style={{
+            zIndex: 10,
+            position: "fixed",
+            display: "block",
+            color: "wheat",
+            marginTop: "370px",
+          }}
+        >
+          my resume
+        </a>
         {/* <h1
           style={{
             zIndex: 11,
