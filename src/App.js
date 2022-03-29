@@ -1,5 +1,4 @@
 import "./App.css";
-import BackgroundClip from "./video/mainbackground.mp4";
 import AudioClip from "./video/cossy.mp3";
 import pdf from "./filers/chankyapatel_resume.pdf";
 
@@ -95,25 +94,6 @@ function App() {
             <h3>LUXE</h3>
           </div>
         </div>
-        {/* <video
-          autoPlay
-          loop
-          muted
-          playsinline
-          style={{
-            position: "absolute",
-            width: "100%",
-            left: "50%",
-            top: "50%",
-            height: "100%",
-            objectFit: "cover",
-            transform: "translate(-50%, -50%)",
-            // zIndex: ,
-          }}
-        >
-          <source src={BackgroundClip} type="video/mp4" />
-        </video> */}
-
         <div className="moving-background"></div>
         <h3>LUXE</h3>
         <div onClick={start}>
