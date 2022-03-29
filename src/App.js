@@ -13,7 +13,9 @@ function App() {
     document.getElementById("overlay").style.display = "block";
     document.getElementById("stayh1").style.color = "white";
     document.getElementById("stayh1").style.opacity = 1;
-    document.getElementById("oldh1").style.opacity = 0.1;
+    document.getElementById("oldh1").textContent = "NOT FOR TOO LONG";
+
+    document.getElementById("oldh1").style.opacity = 0.6;
     document.getElementById("newspan").style.color = "white";
     document.getElementById("mirrorxyztoo").style.display = "none";
     document.getElementById("mirrorxyztoor").style.display = "none";
@@ -46,6 +48,7 @@ function App() {
         <h1
           id="oldh1"
           style={{
+            // position: "absolute",
             zIndex: 1,
             borderStyle: "dashed",
             borderWidth: "5px",
@@ -136,7 +139,7 @@ function App() {
             position: "fixed",
             display: "none",
             color: "wheat",
-            marginTop: "120px",
+            marginTop: "175px",
             fontSize: "small",
             fontWeight: "lighter",
           }}
@@ -153,7 +156,7 @@ function App() {
             position: "fixed",
             display: "none",
             color: "wheat",
-            marginTop: "130px",
+            marginTop: "185px",
           }}
         >
           https://mirror.xyz/chanak.eth
@@ -165,7 +168,7 @@ function App() {
             position: "fixed",
             display: "block",
             color: "wheat",
-            marginTop: "360px",
+            marginTop: "275px",
             fontSize: "small",
             fontWeight: "lighter",
           }}
@@ -181,7 +184,7 @@ function App() {
             position: "fixed",
             display: "block",
             color: "wheat",
-            marginTop: "370px",
+            marginTop: "285px",
           }}
         >
           my resume
@@ -207,9 +210,9 @@ function App() {
             marginLeft: "500px",
             fontFamily: "times",
             fontSize: "medium",
-            opacity: 0.3,
+            opacity: 0.4,
             width: "100%",
-            color: "red",
+            color: "crimson",
             textDecoration: "underline",
             textDecorationColor: "white",
             textDecorationThickness: "40%",
