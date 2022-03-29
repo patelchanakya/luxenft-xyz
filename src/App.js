@@ -23,8 +23,10 @@ function App() {
     document.getElementById("oldh1").style.display = "none";
     document.getElementById("newh1").style.display = "block";
     document.getElementById("newh4").style.display = "block";
+    //  document.getElementById("mirrorxyz").style.display = "block";
     document.getElementById("newspan").style.textDecoration = "none";
     document.getElementById("newh11").style.display = "block";
+    document.getElementById("mirrorxyz").style.display = "block";
   }
 
   return (
@@ -117,6 +119,19 @@ function App() {
         >
           NFT EXPERIENCE
         </h4>
+        <h4
+          class="fade-in-text"
+          id="mirrorxyz"
+          style={{
+            zIndex: 10,
+            position: "fixed",
+            display: "none",
+            color: "antiquewhite",
+            marginTop: "120px",
+          }}
+        >
+          stay tuned ~ https://mirror.xyz/chanak.eth
+        </h4>
         {/* <h1
           style={{
             zIndex: 11,
@@ -134,7 +149,7 @@ function App() {
             display: "none",
             position: "fixed",
             zIndex: 11,
-            marginTop: "847px",
+            marginTop: "647px",
             marginLeft: "500px",
             fontFamily: "times",
             fontSize: "medium",
@@ -157,7 +172,7 @@ function App() {
             position: "fixed",
             width: "100%",
             zIndex: 11,
-            marginTop: "864px",
+            marginTop: "664px",
             marginLeft: "644px",
             textDecoration: "line-through",
             textDecorationColor: "red",
