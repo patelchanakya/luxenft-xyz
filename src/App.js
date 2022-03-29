@@ -46,6 +46,7 @@ function App() {
       <div className="container">
         {/* <div id="darkmane" className="darkbox" onClick={start} /> */}
         <h1
+          className="mainheader"
           id="oldh1"
           style={{
             // position: "absolute",
@@ -94,7 +95,7 @@ function App() {
             <h3>LUXE</h3>
           </div>
         </div>
-        <video
+        {/* <video
           autoPlay
           loop
           muted
@@ -111,7 +112,9 @@ function App() {
           }}
         >
           <source src={BackgroundClip} type="video/mp4" />
-        </video>
+        </video> */}
+
+        <div className="moving-background"></div>
         <h3>LUXE</h3>
         <div onClick={start}>
           <h3>LUXE</h3>
@@ -139,7 +142,7 @@ function App() {
             position: "fixed",
             display: "none",
             color: "wheat",
-            marginTop: "175px",
+            marginTop: "170px",
             fontSize: "small",
             fontWeight: "lighter",
           }}
@@ -176,6 +179,7 @@ function App() {
           about me
         </h4>
         <a
+          className="wiggleme"
           href={pdf}
           id="myres"
           download="chanakya_resume"
@@ -206,8 +210,8 @@ function App() {
             display: "none",
             position: "fixed",
             zIndex: 11,
-            marginTop: "647px",
-            marginLeft: "500px",
+            marginTop: "633px",
+            marginLeft: "475px",
             fontFamily: "times",
             fontSize: "medium",
             opacity: 0.4,
@@ -229,9 +233,10 @@ function App() {
             position: "fixed",
             width: "100%",
             zIndex: 11,
-            marginTop: "664px",
-            marginLeft: "644px",
+            marginTop: "650px",
+            marginLeft: "619px",
             textDecoration: "line-through",
+
             textDecorationColor: "red",
             textDecorationThickness: "40%",
           }}
