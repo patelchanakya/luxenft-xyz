@@ -168,6 +168,10 @@
 
 /* wilggle animation for resume link */
 
+.wigglemetoo {
+  animation: wiggle 5s linear infinite;
+}
+
 .wiggleme {
   animation: wiggle 2s linear infinite;
 }

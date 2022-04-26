@@ -20,8 +20,12 @@ function App() {
     document.getElementById("mirrorxyztoor").style.display = "none";
 
     document.getElementById("myres").style.display = "none";
+    document.getElementById("myyou").style.display = "none";
+
     document.getElementById("myres").classList.add("fade-in-text");
-    document.getElementById("mirrorxyztoor").classList.add("fade-in-text");
+    document.getElementById("myyou").classList.add("fade-in-text");
+
+    // document.getElementById("mirrorxyztoor").classList.add("fade-in-text");
   }
 
   function off() {
@@ -38,6 +42,7 @@ function App() {
     document.getElementById("mirrorxyztoo").style.display = "block";
 
     document.getElementById("myres").style.display = "block";
+    document.getElementById("myyou").style.display = "block";
   }
 
   return (
@@ -175,9 +180,9 @@ function App() {
           my resume
         </a>
         <a
-          className="wiggleme"
+          className="wigglemetoo"
           href="https://www.youtube.com/watch?v=FFOTojECeWc"
-          id="myres"
+          id="myyou"
           style={{
             zIndex: 10,
             position: "fixed",
