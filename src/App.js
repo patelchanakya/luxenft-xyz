@@ -53,6 +53,7 @@ function App() {
             borderStyle: "dashed",
             borderWidth: "5px",
             borderColor: "crimson",
+            position: "relative",
           }}
           onClick={on}
         >
@@ -168,22 +169,26 @@ function App() {
             position: "fixed",
             display: "block",
             color: "wheat",
-            marginTop: "285px",
+            marginTop: "290px",
           }}
         >
           my resume
         </a>
-        {/* <h1
+        <a
+          className="wiggleme"
+          href="https://www.youtube.com/watch?v=FFOTojECeWc"
+          id="myres"
           style={{
-            zIndex: 11,
-            marginTop: "847px",
-            marginLeft: "500px",
-            fontSize: "1rem",
+            zIndex: 10,
             position: "fixed",
+            display: "block",
+            color: "wheat",
+            marginTop: "325px",
           }}
         >
-          @chanakyeah
-        </h1> */}
+          my youtube
+        </a>
+
         <h1
           id="newh11"
           style={{
@@ -203,7 +208,7 @@ function App() {
             textDecorationStyle: "double",
           }}
         >
-          c o m i n g s o o n
+          project c o m i n g s o o n
         </h1>
         <span
           id="newspan"
@@ -214,7 +219,7 @@ function App() {
             width: "100%",
             zIndex: 11,
             marginTop: "650px",
-            marginLeft: "619px",
+            marginLeft: "612px",
             textDecoration: "line-through",
 
             textDecorationColor: "red",
