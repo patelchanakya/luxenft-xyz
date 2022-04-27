@@ -1,8 +1,5 @@
 https://chanak.xyz
 
-Maze Solidity > Smart Contracts
-Boiler mint website w smart contract sys built-in
-# LUXEnft
 
 # Start up
   npm start
