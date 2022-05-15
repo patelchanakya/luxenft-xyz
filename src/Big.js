@@ -1,4 +1,4 @@
-import BackgroundClip from "./video/mainback.mp4";
+import BackgroundClip from "./video/mainbackground.mp4";
 
 function Big() {
   return (
